@@ -1,4 +1,5 @@
-//Ê¹ÓÃGBK±àÂë
+//ä½¿ç”¨GBKç¼–ç 
+//Mengshi7
 # include <iostream>
 using namespace std;
 
@@ -21,60 +22,60 @@ void Output_List(PLNode L);
 int main(void)
 {
     int n;
-    printf("ÇëÊäÈëÁ´±íÔªËØµÄ¸öÊı£º");
+    printf("è¯·è¾“å…¥é“¾è¡¨å…ƒç´ çš„ä¸ªæ•°ï¼š");
     scanf("%d", &n);
     PLNode L = Creat_List(n);
 /*
-    µ¥Á´±íĞŞ¸Ä²âÊÔ
-    printf("ĞŞ¸ÄÇ°");
+    å•é“¾è¡¨ä¿®æ”¹æµ‹è¯•
+    printf("ä¿®æ”¹å‰");
     Output_List(L);
     printf("\n");
     ElemType x;
     while(1)
     {
-        printf("ÇëÊäÈë½«ĞŞ¸ÄµÄÎ»ÖÃ¼°ĞŞ¸ÄºóµÄÖµ£º");
+        printf("è¯·è¾“å…¥å°†ä¿®æ”¹çš„ä½ç½®åŠä¿®æ”¹åçš„å€¼ï¼š");
         scanf("%d%d", &n, &x);
         Modify_List(L, n, x);
-        printf("ĞŞ¸Äºó");
+        printf("ä¿®æ”¹å");
         Output_List(L);
         printf("\n");
     }
 */
   /*
-    µ¥Á´±í²éÕÒ£¨Á½ÖÖ·½·¨£©²âÊÔ
+    å•é“¾è¡¨æŸ¥æ‰¾ï¼ˆä¸¤ç§æ–¹æ³•ï¼‰æµ‹è¯•
     ElemType x;
     int j;
     while (1)
     {
-        printf("ÇëÑ¡Ôñ²éÕÒÔªËØµÄ·½Ê½£º1.ÔªËØµÄÖµ 2.ÔªËØµÄÎ»ÖÃ\n");
+        printf("è¯·é€‰æ‹©æŸ¥æ‰¾å…ƒç´ çš„æ–¹å¼ï¼š1.å…ƒç´ çš„å€¼ 2.å…ƒç´ çš„ä½ç½®\n");
         scanf("%d", &n);
         switch(n)
         {
             case 1:
-                printf("ÇëÊäÈëÔªËØµÄÖµ£º");
+                printf("è¯·è¾“å…¥å…ƒç´ çš„å€¼ï¼š");
                 scanf("%d", &x);
                 j = Locate_List(L, x);
                 if (j <= 0)
                 {
-                    printf("ÎŞ¸ÃÔªËØ£¡£¡£¡\n");
+                    printf("æ— è¯¥å…ƒç´ ï¼ï¼ï¼\n");
                     break;
                 }
                 else
                 {
-                    printf("%d¶ÔÓ¦ÔªËØµÄÎ»ÖÃÎª%d\n", x, j);
+                    printf("%då¯¹åº”å…ƒç´ çš„ä½ç½®ä¸º%d\n", x, j);
                 }
                 break;
             case 2:
-                printf("ÇëÊäÈëÔªËØµÄÎ»ÖÃ£º");
+                printf("è¯·è¾“å…¥å…ƒç´ çš„ä½ç½®ï¼š");
                 scanf("%d", &n);
                 PLNode q = GetElem_List(L, n);
                 if (q)
                 {
-                    printf("µÚ%d¸öÎ»ÖÃµÄÔªËØÎª£º%d\n", n, q->data);
+                    printf("ç¬¬%dä¸ªä½ç½®çš„å…ƒç´ ä¸ºï¼š%d\n", n, q->data);
                 }
                 else
                 {
-                    printf("ÎŞ¸ÃÔªËØ£¡£¡£¡\n");
+                    printf("æ— è¯¥å…ƒç´ ï¼ï¼ï¼\n");
                     break;
                 }
                 break;
@@ -83,17 +84,17 @@ int main(void)
     }
 */
  /*
-    µ¥Á´±íÉ¾³ı²âÊÔ
-    printf("É¾³ıÇ°");
+    å•é“¾è¡¨åˆ é™¤æµ‹è¯•
+    printf("åˆ é™¤å‰");
     Output_List(L);
     printf("\n");
     while(1)
     {
-        printf("ÇëÊäÈëÒªÉ¾³ıÔªËØµÄÎ»ÖÃ£º");
+        printf("è¯·è¾“å…¥è¦åˆ é™¤å…ƒç´ çš„ä½ç½®ï¼š");
         scanf("%d", &n);
         if (Delete_List(L, n))
         {
-            printf("É¾³ıºó");
+            printf("åˆ é™¤å");
             Output_List(L);
             printf("\n");
         }
@@ -102,25 +103,25 @@ int main(void)
     }
 */
 /* 
-    µ¥Á´±í²åÈëÔªËØ²âÊÔ
+    å•é“¾è¡¨æ’å…¥å…ƒç´ æµ‹è¯•
     ElemType x;
-    printf("ÇëÊäÈë²åÈëµÄÎ»ÖÃ¼°ÔªËØ£º\n");
+    printf("è¯·è¾“å…¥æ’å…¥çš„ä½ç½®åŠå…ƒç´ ï¼š\n");
     scanf("%d%d", &n, &x);
-    printf("²åÈëÇ°");
+    printf("æ’å…¥å‰");
     Output_List(L);
     printf("\n");
     if (n == 0)
-        printf("²åÈëÊ§°Ü£¡£¡£¡\n");
+        printf("æ’å…¥å¤±è´¥ï¼ï¼ï¼\n");
     else
     {
         while(n)
         {
             if (Insert_List(L, n, x))
             {
-                printf("²åÈëºó");
+                printf("æ’å…¥å");
                 Output_List(L);
                 printf("\n");
-                printf("ÇëÊäÈë²åÈëµÄÎ»ÖÃ¼°ÔªËØ£º\n");
+                printf("è¯·è¾“å…¥æ’å…¥çš„ä½ç½®åŠå…ƒç´ ï¼š\n");
                 scanf("%d%d", &n, &x);
             } 
             else
@@ -129,26 +130,26 @@ int main(void)
     }
  */     
  /*
-    Í·²å·¨´´½¨Á´±í²âÊÔ 
-    printf("ÇëÊäÈëÁ´±íÔªËØµÄ¸öÊı£º");
+    å¤´æ’æ³•åˆ›å»ºé“¾è¡¨æµ‹è¯• 
+    printf("è¯·è¾“å…¥é“¾è¡¨å…ƒç´ çš„ä¸ªæ•°ï¼š");
     scanf("%d", &n);
     PLNode L = Creat_List(n);
     Output_List(L);
 */
 /*  
-    ²éÕÒÖ¸¶¨Î»ÖÃÔªËØ²âÊÔ
+    æŸ¥æ‰¾æŒ‡å®šä½ç½®å…ƒç´ æµ‹è¯•
     Output_List(L);
     while (n)
     {
-        printf("ÇëÊäÈëÒª²éÕÒÔªËØµÄÎ»ÖÃ£º");
+        printf("è¯·è¾“å…¥è¦æŸ¥æ‰¾å…ƒç´ çš„ä½ç½®ï¼š");
         scanf("%d", &n);
         PLNode x = GetElem_List(L, n);
         if (x)
         {
-            printf("µÚ%d¸öÔªËØÎª£º%d\n", n, x->data);
+            printf("ç¬¬%dä¸ªå…ƒç´ ä¸ºï¼š%d\n", n, x->data);
         }
         else
-            printf("¸ÃÎ»ÖÃÎŞÔªËØ£¡\n");
+            printf("è¯¥ä½ç½®æ— å…ƒç´ ï¼\n");
     }
 */
     system("pause");
@@ -156,29 +157,29 @@ int main(void)
 }
 
 PLNode Creat_List(int n)
-{  //ÓÃÍ·²å·¨´´½¨Ò»¸öº¬n¸öÔªËØµÄµ¥Á´±í,²¢·µ»ØÍ·Ö¸Õë
-    PLNode L = new LNode;  //Éú³ÉÒ»¸öÍ·½Úµã£¬ÓÃÍ·Ö¸ÕëÖ¸ÏòÍ·½Úµã
+{  //ç”¨å¤´æ’æ³•åˆ›å»ºä¸€ä¸ªå«nä¸ªå…ƒç´ çš„å•é“¾è¡¨,å¹¶è¿”å›å¤´æŒ‡é’ˆ
+    PLNode L = new LNode;  //ç”Ÿæˆä¸€ä¸ªå¤´èŠ‚ç‚¹ï¼Œç”¨å¤´æŒ‡é’ˆæŒ‡å‘å¤´èŠ‚ç‚¹
     L->pnext = NULL;
 
     if (!L)
     {    
-        printf("´´½¨Ê§°Ü£¡\n");
+        printf("åˆ›å»ºå¤±è´¥ï¼\n");
         exit(-1);
     }
     else
     {
-        printf("ÇëÄæĞòÊäÈë¸÷¸öÔªËØ:\n");
+        printf("è¯·é€†åºè¾“å…¥å„ä¸ªå…ƒç´ :\n");
         for (int i=n; i>0; --i)
         {
             PLNode p = new LNode;
             if (!p)
             {
-                printf("´´½¨Ê§°Ü");
+                printf("åˆ›å»ºå¤±è´¥");
                 exit(-1);
             }
             else
             {
-                printf("ÇëÊäÈëµÚ%d¸öÔªËØ:", i);
+                printf("è¯·è¾“å…¥ç¬¬%dä¸ªå…ƒç´ :", i);
                 scanf("%d", &p->data);
                 p->pnext = L->pnext;
                 L->pnext = p;
@@ -189,24 +190,24 @@ PLNode Creat_List(int n)
 }
 
 bool Insert_List(PLNode L, int i, ElemType e)
-{  /*ÔÚi¸öÔªËØÇ°²åÈëÔªËØe*/
+{  /*åœ¨iä¸ªå…ƒç´ å‰æ’å…¥å…ƒç´ e*/
     PLNode p = L;
     int j = 0;
 
     while (p && j<i-1)
-    {  /*Ñ­»·Õı³£ÍË³öÊ±£¬pÖ¸ÏòµÚi-1¸ö½áµã*/
+    {  /*å¾ªç¯æ­£å¸¸é€€å‡ºæ—¶ï¼ŒpæŒ‡å‘ç¬¬i-1ä¸ªç»“ç‚¹*/
         p = p->pnext;
         ++j;
     }
     if (!p || j>i-1)
     {
-        printf("²åÈëÊ§°Ü!!!\n");
+        printf("æ’å…¥å¤±è´¥!!!\n");
         return false;
     }
     PLNode s = new LNode;
     if (!s)
     {
-        printf("²åÈëÊ§°Ü!!!\n");
+        printf("æ’å…¥å¤±è´¥!!!\n");
         exit(-1);
     }
     s->data = e;
@@ -217,17 +218,17 @@ bool Insert_List(PLNode L, int i, ElemType e)
 }
 
 bool Delete_List(PLNode L, int i)
-{  /*É¾³ıµÚi¸öÔªËØ*/
+{  /*åˆ é™¤ç¬¬iä¸ªå…ƒç´ */
     PLNode p = L;
     int j = 0;
     while((p->pnext) && j<i-1)
-    {  /*Ñ­»·Õı³£½áÊø£¬pÖ¸ÏòµÚi-1¸ö½áµã*/
+    {  /*å¾ªç¯æ­£å¸¸ç»“æŸï¼ŒpæŒ‡å‘ç¬¬i-1ä¸ªç»“ç‚¹*/
         p = p->pnext;
         j++;
     }
     if (!(p->pnext) || (j>i-1))
     {
-        printf("É¾³ıÊ§°Ü!!!");
+        printf("åˆ é™¤å¤±è´¥!!!");
         return false;
     }
     PLNode q = p->pnext;
@@ -237,7 +238,7 @@ bool Delete_List(PLNode L, int i)
 }
 
 int Locate_List(PLNode L, ElemType e)
-{  /*²éÕÒÖµÎªeµÄÔªËØ£¬·µ»ØÆäÎ»ÖÃ*/
+{  /*æŸ¥æ‰¾å€¼ä¸ºeçš„å…ƒç´ ï¼Œè¿”å›å…¶ä½ç½®*/
     PLNode p = L->pnext;
     int j = 1;
 
@@ -251,11 +252,11 @@ int Locate_List(PLNode L, ElemType e)
         return -1;
     }
     else
-        return j;  //²éÕÒ³É¹¦·µ»ØÎ»ÖÃ£¬·ñÔò·µ»Ø0
+        return j;  //æŸ¥æ‰¾æˆåŠŸè¿”å›ä½ç½®ï¼Œå¦åˆ™è¿”å›0
 }
 
 PLNode GetElem_List(PLNode L, int i)
-{  /*²éÕÒµÚi¸öÔªËØ,²¢·µ»ØÖ¸ÏòÆäµÄÖ¸Õë*/
+{  /*æŸ¥æ‰¾ç¬¬iä¸ªå…ƒç´ ,å¹¶è¿”å›æŒ‡å‘å…¶çš„æŒ‡é’ˆ*/
     PLNode p = L->pnext;
     int j = 1;
 
@@ -266,7 +267,7 @@ PLNode GetElem_List(PLNode L, int i)
     }
     if (!p || j>i)
     {
-        printf("²éÕÒÊ§°Ü£¡\n");
+        printf("æŸ¥æ‰¾å¤±è´¥ï¼\n");
         return NULL;
     } 
     else
@@ -274,7 +275,7 @@ PLNode GetElem_List(PLNode L, int i)
 }
 
 bool Modify_List(PLNode L, int i, ElemType e)
-{  /*½«µÚi¸öÔªËØµÄÖµ¸ü¸ÄÎªe*/
+{  /*å°†ç¬¬iä¸ªå…ƒç´ çš„å€¼æ›´æ”¹ä¸ºe*/
     PLNode p = L->pnext;
     int j = 1;
     while (p && j<i)
@@ -284,7 +285,7 @@ bool Modify_List(PLNode L, int i, ElemType e)
     }
     if (!p || j > i)
     {
-        printf("ĞŞ¸Ä´íÎó\n");
+        printf("ä¿®æ”¹é”™è¯¯\n");
         return false;
     }
     else
@@ -295,13 +296,13 @@ bool Modify_List(PLNode L, int i, ElemType e)
 }
 
 void Output_List(PLNode L)
-{  /*Êä³öÁ´±íº¬ÓĞµÄÔªËØ*/
+{  /*è¾“å‡ºé“¾è¡¨å«æœ‰çš„å…ƒç´ */
     PLNode p = L->pnext;
     int i = 1;
-    printf("Á´±í¸÷ÔªËØÄÚÈİ£º\n");
+    printf("é“¾è¡¨å„å…ƒç´ å†…å®¹ï¼š\n");
     while (p)
     {
-        printf("µÚ%d¸öÔªËØ:%d ", i++, p->data);
+        printf("ç¬¬%dä¸ªå…ƒç´ :%d ", i++, p->data);
         p = p->pnext;
     }
 }
